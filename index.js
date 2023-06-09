@@ -38,8 +38,11 @@ client.on('ready', () => {
   if (remaining_time<35 && remaining_time%10==0 && remaining_time>0) {
     testChannel.send(`Hell tide is starting in ${remaining_time} minutes!`);
   }
-  else if (remaining_time > 61 && remaining_time%10==5) {
-    testChannel.send(`Hell tide has begun and will end in ${remaining_time-60} minutes!`)
+  else if (remaining_time == 75) {
+    testChannel.send(`Hell tide ends now!`)
+  }
+  else if (remaining_time > 80 && remaining_time%10==5 ** running_time) {
+    testChannel.send(`Hell tide has begun and will end in ${remaining_time-75} minutes!`)
   }
   else if (remaining_time==0) {
     testChannel.send(`Hell tide has begun!`);
